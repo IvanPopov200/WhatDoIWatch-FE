@@ -82,8 +82,10 @@ const HomePage = () => {
           setIsLoading(false);
           navigate('/recommendations');
           return;
+        } else if (status === 'new_user') {
+          setLoadingStatus('Gathering data');
         } else if (status === 'scraping') {
-          setLoadingStatus('Scraping your data');
+          setLoadingStatus('Scraping your Letterboxd profile');
         } else if (status === 'movie_data') {
           setLoadingStatus('Generating your recommendations');
         } else {

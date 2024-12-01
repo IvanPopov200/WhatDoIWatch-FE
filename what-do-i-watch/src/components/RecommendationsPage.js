@@ -156,16 +156,6 @@ const RecommendationsPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 px-4 py-8">
       <div className="max-w-7xl mx-auto">
-        {/* Navigation */}
-        <motion.nav 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="mb-8"
-        >
-          <Link to="/" className="text-purple-400 hover:text-purple-300 transition-colors">
-            ← Back to Home
-          </Link>
-        </motion.nav>
 
         {/* Header */}
         <motion.div 
